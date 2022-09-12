@@ -1,13 +1,9 @@
-<html>
-<head>
-    <title>Smartnotes</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
     <h1>These are the notes: </h1>
     <ul>
         {% for note in notes %}
-            <li><a href="">{{note.title}}</a></li>
+            <li class="note-li">{{note.title}}</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
